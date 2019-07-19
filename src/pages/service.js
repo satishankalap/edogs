@@ -7,20 +7,18 @@ import SEO from "../components/seo"
 import Herosection from "../components/reuseable/Herosection"
 import Infoblock from "../components/reuseable/Infoblock"
 import Dualinfoblock from "../components/reuseable/Dualinfoblock"
-import Coursecart from "../components/cart/Coursecart"
 
 
-const IndexPage = ({data}) => (
+const ServicePage = ({data}) => (
   <Layout>
     <SEO title="Home" />
     <Herosection 
       img={data.img.childImageSharp.fluid}
-      title="I write my code."
-      subtitle="learncodeonline.in"
-      heroclass="hero-background"
+      title="Our Services."
+      subtitle=""
+      heroclass="about-background"
       />
     <Infoblock heading="About Us" /> 
-    <Coursecart courses={data.courses}/>
     <Dualinfoblock heading="Our Team" />
   </Layout>
 )
@@ -34,22 +32,6 @@ export const query = graphql `
         }
       }
     }
-  
-  courses:allContentfulCourses{
-      edges{
-        node{
-          id
-          title
-          price
-    
-          image {
-            fixed(width:200,height:120){
-              ...GatsbyContentfulFixed_tracedSVG
-            }
-          }
-        }
-      }
-    }
 }
 ` 
-export default IndexPage
+export default ServicePage
