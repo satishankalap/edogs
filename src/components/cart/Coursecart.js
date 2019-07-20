@@ -19,7 +19,7 @@ export default class Coursecart extends Component {
             <div className="row">
                 {this.state.courses.map(({node})=>{
                     return(
-                        <div key={node.id} className="col-11 col-md-6 d-flex my-3cd cd mx-auto">
+                        <div key={node.id} className="col-11 col-md-6 d-flex my-3 mx-auto">
                             <Img fixed={node.image.fixed}/>
                             <div className="flex-grow-1 px-3">
                                 <div className="d-flex justify-content-between">
@@ -33,7 +33,7 @@ export default class Coursecart extends Component {
                                 data-item-id={node.id}
                                 data-item-name={node.title}
                                 data-item-price={node.price}
-                                data-item-url=""
+                                data-item-url="https://fervent-kepler-1f2fd1.netlify.com"
                                 data-item-image={node.image}
                                 >Join now </button>
                             </div>
