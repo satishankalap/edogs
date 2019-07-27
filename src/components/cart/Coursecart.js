@@ -30,16 +30,17 @@ catyClicked = category => {
     let keepItsafe=[...this.state.courses]
 
     if(category==="All"){
-        this.state(()=>{
+        this.setState(()=>{
             return {mycourses : keepItsafe}
         })
-    } else{
-        let holdme = keepItsafe.filter(({node})=>node.category ===category)
+    } 
+    else{
+        let holdme = keepItsafe.filter(({node})=>node.category === category)
         this.setState(()=>{
             return {mycourses : holdme}
         })
-
     }
+    
 }
 
     render() {
