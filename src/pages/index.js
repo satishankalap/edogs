@@ -40,6 +40,7 @@ export const query = graphql `
         node{
           id
           title
+          category
           price
     
           image {
