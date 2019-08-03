@@ -14,7 +14,7 @@ const ContactPage = ({data}) => (
     <Herosection 
       img={data.img.childImageSharp.fluid}
       title="Contact Us."
-      subtitle=""
+      subtitle="You can contact our management for any queries."
       heroclass="about-background"
       />
       <Infoblock heading="How can we help?" /> 
@@ -24,7 +24,7 @@ const ContactPage = ({data}) => (
 
 export const query = graphql `
 {
-  img: file(relativePath: { eq: "contact.png" }) {
+  img: file(relativePath: { eq: "dog2.jpg" }) {
       childImageSharp {
         fluid{
           ...GatsbyImageSharpFluid_tracedSVG

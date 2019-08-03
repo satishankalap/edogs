@@ -12,9 +12,13 @@
   flex-direction: column;
 }
 .about-background{
-  min-height:30vh;
+  min-height:80vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.containers{
+ min-height:100vh ;
+ display: flex;
 }

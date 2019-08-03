@@ -15,19 +15,19 @@ const IndexPage = ({data}) => (
     <SEO title="Home" />
     <Herosection 
       img={data.img.childImageSharp.fluid}
-      title="I write my code."
-      subtitle="learncodeonline.in"
+      title="Breeds Are LOVE."
+      subtitle="Follow us on edogs.in"
       heroclass="hero-background"
       />
     <Infoblock heading="About Us" /> 
-    <Coursecart courses={data.courses}/>
-    <Dualinfoblock heading="Our Team" />
+    <Coursecart courses={data.mycourses}/>
+    <Dualinfoblock heading="Truth know by everyone,but none follows" />
   </Layout>
 )
 
 export const query = graphql `
 {
-  img: file(relativePath: { eq: "heromain.png" }) {
+  img: file(relativePath: { eq: "dogs.jpg" }) {
       childImageSharp {
         fluid{
           ...GatsbyImageSharpFluid_tracedSVG
@@ -35,7 +35,7 @@ export const query = graphql `
       }
     }
   
-  courses:allContentfulCourses{
+  mycourses:allContentfulCourses{
       edges{
         node{
           id

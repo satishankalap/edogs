@@ -13,19 +13,18 @@ const AboutPage = ({data}) => (
     <SEO title="Home" />
     <Herosection 
       img={data.img.childImageSharp.fluid}
-      title="About LearnCode."
-      subtitle=""
+      title="About Us."
+      subtitle="Our aim is to digitalise dogs,this is the perfect place to search for your favourite breed.You and buy sell healthy breeds from EDogs."
       heroclass="about-background"
       />
-      <Dualinfoblock heading="A message From CEO" />
-      <Infoblock heading="About Vision" /> 
+      <Infoblock heading="Our Vision" /> 
       <Teamphotosection />
   </Layout>
 )
 
 export const query = graphql `
 {
-  img: file(relativePath: { eq: "about.png" }) {
+  img: file(relativePath: { eq: "dog1.jpg" }) {
       childImageSharp {
         fluid{
           ...GatsbyImageSharpFluid_tracedSVG

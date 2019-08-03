@@ -23,7 +23,7 @@ export default class Coursecart extends Component {
         this.state={
             courses:props.courses.edges,
             mycourses:props.courses.edges,
-            mycategories:getCaty(props.courses.edges),
+            mycategories:getCaty(props.courses.edges)   
         }
     }
 catyClicked = category => {
@@ -48,7 +48,7 @@ catyClicked = category => {
         return (
             <section className="py-5">
             <div className="container">
-            <Heading title="courses"/>
+            <Heading title="Available Breeds"/>
             <div className="row">
                 <div className="col-10 mx-auto text-center">
                     {this.state.mycategories.map((category,index) =>{
@@ -85,7 +85,7 @@ catyClicked = category => {
                                 data-item-price={node.price}
                                 data-item-url="https://fervent-kepler-1f2fd1.netlify.com"
                                 data-item-image={node.image}
-                                >Join now </button>
+                                >Get Me </button>
                             </div>
                         </div>
                     )
