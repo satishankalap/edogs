@@ -21,7 +21,7 @@ const IndexPage = ({data}) => (
       />
     <Infoblock heading="About Us" /> 
     <Coursecart courses={data.mycourses}/>
-    <Dualinfoblock heading="Truth know by everyone,but none follows" />
+    <Dualinfoblock heading="Truth known by everyone,but none follows" />
   </Layout>
 )
 

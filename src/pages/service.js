@@ -15,17 +15,17 @@ const ServicePage = ({data}) => (
     <Herosection 
       img={data.img.childImageSharp.fluid}
       title="Our Services."
-      subtitle=""
+      subtitle="To make everyone love and respect DOGS."
       heroclass="about-background"
       />
-    <Infoblock heading="About Us" /> 
+    <Infoblock heading="Our Service" /> 
     <Dualinfoblock heading="Our Team" />
   </Layout>
 )
 
 export const query = graphql `
 {
-  img: file(relativePath: { eq: "heromain.png" }) {
+  img: file(relativePath: { eq: "dog1.jpg" }) {
       childImageSharp {
         fluid{
           ...GatsbyImageSharpFluid_tracedSVG
