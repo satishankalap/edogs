@@ -50,7 +50,7 @@ catyClicked = category => {
             <div className="container">
             <Heading title="Available Breeds"/>
             <div className="row">
-                <div className="col-10 mx-auto text-center">
+                <div className="col-10 col-sm-5 col-xs-5 mx-auto text-center">
                     {this.state.mycategories.map((category,index) =>{
                         return(
                             <button type="button" className="btn btn-info m-3 px-3" key={index} onClick={()=>{

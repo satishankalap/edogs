@@ -41,26 +41,26 @@ export default class navbar extends Component {
     }
     render() {
         return (
-            <nav className="navbar navbar-expand-sm bg-theme text-white">
+            <nav className="navbar navbar-expand-sm bg-theme text-dark">
                 <Link to='/' className ="navbar-brand ml=5">
                     <img src={logo} alt="logo is here" width="60px">
                     </img>
                 </Link>
                 <button className="navbar-toggler" type="button" onClick={this.myToggler}
                 >
-                    <spam className="text-white">Menu</spam>
+                    <spam className="text-dark">Menu</spam>
                 </button>
                 <div className={this.state.navbarClass}>
                     <ul className="navbar-nav ml-auto mr-5">
                         {this.state.menus.map(menu => {
                             return (
                             <li key={menu.id} className="nav-item">
-                            <Link to={menu.url} className="nav-link text-white" >{menu.text}</Link>
+                            <Link to={menu.url} className="nav-link text-dark" >{menu.text}</Link>
                         </li>)
                         })
                         }
                         <li className="nav-item">
-                            <Link to="/" className="nav-link text-white" > <FaCartArrowDown className = "cart-icon" /></Link>
+                            <Link to="/" className="nav-link text-dark" > <FaCartArrowDown className = "cart-icon" /></Link>
                            
                         </li>
                     </ul>
